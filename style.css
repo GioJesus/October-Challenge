@@ -1,0 +1,122 @@
+.container {
+    width: 60%;
+    top: cm;
+    margin: 0 auto;
+    background-color: #bcebdf;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 0.5s ease;
+    border-radius: 2em;
+    font-family: 'Bitter', serif;
+}
+.card {
+    width: 255px;
+    margin: 5px;
+    background-color: #e0f3ee;
+    height: 640px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 0.5s ease;
+    border-radius: 2em;
+    
+}
+.card-image {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease;
+    border-radius: 2em;
+}
+.card-title {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+}
+.card-description {
+    font-size: 13px;
+    padding: 20px;
+}
+.card-average {
+    font-size: 13px;
+    padding: 20px;
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 90%;
+    }
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    left: 0;
+}
+.wrapper .sidebar{
+    background: #bcebdf;
+    position: fixed;
+    top: 2cm;
+    left: 1%;
+    width: 225px;
+    height: 70%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    border-radius: 2em;
+    font-family: 'Bitter', serif;
+}
+.wrapper .sidebar .profile{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+    color: black;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{
+    color: black;
+    font-size: 14px;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.671);
+    color: black;
+    font-size: 16px;
+    position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+    color: black;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+    color: black;
+
+    background:#3d7b80;
+    border-right: 2px solid #3d7b80;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #6f95ff;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
